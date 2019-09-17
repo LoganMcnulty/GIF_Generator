@@ -1,0 +1,56 @@
+body{
+    background: url('../Images/background_stars.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+  }
+
+.gifButton{
+    margin-left:1%;
+}
+
+#title{
+    margin:3%;
+    text-align:center;
+    text-shadow: -1px 0 #f6d8ac, 0 1px #f6d8ac, 1px 0 #f6d8ac, 0 -1px #f6d8ac;
+    color:white;
+    font-weight: bold;
+    text-decoration:underline;
+    font-size:60px;
+    line-height:80px;
+    font-family: 'Space Mono', monospace;
+}
+
+#buttonContainer{
+    background:#7e9a9a;
+    border: solid #8ec3eb 3px;
+    border-radius:15px;
+    padding:1%;
+}
+
+#gifContainer{
+    background:#7e9a9a;
+    border: solid #8ec3eb 3px;
+    margin-top:3%;
+    padding:1%;
+    border-radius:15px;
+}
+
+.card{
+    width: 10rem;
+    float:left;
+}
+
+#gif{
+    float:left;
+}
+
+#searchContainer{
+    background:#7e9a9a;
+    border: solid #8ec3eb 3px;
+    margin-top:3%;
+    height:150px;
+    border-radius:15px;
+    padding:1%;
+}
