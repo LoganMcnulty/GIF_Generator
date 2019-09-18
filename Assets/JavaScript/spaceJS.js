@@ -1,6 +1,29 @@
 $(document).ready(function(){
     var gifs = ["Hubble Telescope", "Moon", "SpaceX"];
 
+    $("#space").on("click", function() {
+        $("head link#themeSelectorCSS").attr("href", "assets/css/spaceCSS.css");
+        alert('test')
+    });
+
+    
+    $("#zooAnimals").on("click", function() {
+        $("head link#themeSelectorCSS").attr("href", "assets/css/space.css");
+        alert('test')
+    });
+
+    
+    $("#finance").on("click", function() {
+        $("head link#themeSelectorCSS").attr("href", "assets/css/space.css");
+        alert('test')
+    });
+
+    
+    $("#sports").on("click", function() {
+        $("head link#themeSelectorCSS").attr("href", "assets/css/space.css");
+        alert('test')
+    });
+
     // displayMovieInfo function re-renders the HTML to display the appropriate content
     function displayGifInfo() {
 
@@ -13,17 +36,18 @@ $(document).ready(function(){
         method: "GET"
       }).then(function(response) {
           console.log(response);
-            $("#gifContainer").empty();
+          $("#gifContainer").remove();
+          var gifContainer = $("<div class='col-10' id='gifContainer'>")
           for (var i = 0; i < response.data.length; i++){
             console.log("spaghetti")
             var gifURL = response.data[i].images.fixed_height.url;
             var gifTitle = response.data[i].title;
             var gifRating = response.data[i].rating;
 
-            var gifCard = $("<div class='card h-10' style='width:10rem'>");
-            var gifImage = $("<img>").addClass("card-img-top ").attr("src", gifURL).attr("alt", "Card image cap");
+            var gifCard = $("<div class='card h-10' style='width:10rem; height: 20em; margin:1%;'>");
+            var gifImage = $("<img>").addClass("card-img-top").attr("src", gifURL).attr("alt", "Card image cap");
             var gifCardBody = $("<div>");
-            gifCardBody.addClass("card-body");
+            gifCardBody.addClass("card-body").attr("style","padding:1%;");
             var pOne = $("<p>").text("Rating: " + gifRating);
             gifCardBody.append(pOne);
             var pTwo = $("<p>").text("Title: " + gifTitle);
@@ -33,9 +57,9 @@ $(document).ready(function(){
             gifCard.append(gifImage);    
             gifCard.append(gifCardBody);    
 
+            $("#gifRow").append(gifContainer);
             $("#gifContainer").append(gifCard);
 
-            
               console.log(gifURL,gifTitle,gifRating);
           }
       });
@@ -78,6 +102,8 @@ $(document).ready(function(){
       // Calling renderButtons which handles the processing of our movie array
       renderButtons();
     });
+
+   
 
     // Adding a click event listener to all elements with a class of "movie-btn"
     $(document).on("click", ".gifButton", displayGifInfo);

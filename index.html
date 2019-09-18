@@ -7,7 +7,7 @@
 
     <!-- CSS links -->
     <link rel="stylesheet" href="assets/css/reset.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link id="themeSelectorCSS" rel="stylesheet" type="text/css" href="assets/css/spaceCSS.css">
 
     <!-- Bootstrap link -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
@@ -17,45 +17,47 @@
 </head>
 
 <body>
+
     <div class="container">
-
-
-        <!-- Header -->
-            <div class="row justify-content-around">
-                <div class="col-8" id="title">A Universe of GIFs</div>
-            </div>
-
-        <!-- Button container -->
-            <div class="row justify-content-around">
-                <div class="col-11" id="buttonContainer"></div>
-            </div>
-
-            <!-- Gif Container-->
-            <div class="row justify-content-around">
-                <div class="col-8" id="gifContainer">
-
-                    <!--Placeholder Card-->
-                    <div class="card" style="width: 10rem;">
-                        <!-- <img class="card-img-top" src="https://placebear.com/350/225" alt="Card image cap">
-                            <div class="card-body">
-                              <p class="card-text gifName">Name:</p>
-                              <p class="card-text gifRating">Rating:</p> -->
-                    </div>
+    <!-- Header -->
+        <div class="row justify-content-around">
+            <div class="col-8" id="title">A Universe of GIFs</div>
+        </div>
+        
+    <!-- Pick a theme-->    
+    <div class="row justify-content-around">
+            <div class="col-4" id="themeContainer">
+                <div class="row justify-content-around">
+                    <button class="col-5 btn btn-primary btn-lg themeButton" id="zooAnimals">Zoo Animals</button>
+                    <button class="col-5 btn btn-primary btn-lg themeButton" id="finance">Finance</button><br>
                 </div>
-
-            </div>
-                <div class="col-3" id="searchContainer">
-                    <form>
-                        <div class="form-group">
-                            <label for="exampleInputEmail1">Add a Gif Button!</label>
-                            <input class="form-control" id="addGif" placeholder="Search For Gif">
-                        </div>
-                        <button type="submit" id="addGifButton" class="btn btn-primary">Submit</button>
-                    </form>
+                <div class="row justify-content-around">
+                    <button class="col-5 btn btn-primary btn-lg themeButton" id="sports">Sports</button>
+                    <button class="col-5 btn btn-primary btn-lg themeButton" id="space">Space</button>
                 </div>
             </div>
-
+    
+    <!-- Add a Gif Button -->
+        <div class="col-4" id="searchContainer">
+            <form>
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Add a Gif Button!</label>
+                    <input class="form-control" id="addGif" placeholder="Search For Gif">
+                </div>
+                <button type="submit" id="addGifButton" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
     </div>
+
+    <!-- Button container -->
+        <div class="row justify-content-around">
+            <div class="col-11" id="buttonContainer"></div>
+        </div>
+
+    <!-- Gif Row-->
+        <div class="row justify-content-around" id="gifRow"></div>
+
+</div>
 
 <!--Boot Strap JQuery-->
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -66,7 +68,7 @@
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
 <!-- Script -->
-<script type="text/javascript" src="assets/Javascript/app.js"></script>
+<script id="themeSelectorJS" type="text/javascript" src="assets/Javascript/spaceJS.js"></script>
 
 </body>
 </html>

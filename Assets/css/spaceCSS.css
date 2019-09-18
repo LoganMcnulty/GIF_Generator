@@ -6,8 +6,12 @@ body{
     -o-background-size: cover;
   }
 
-.gifButton{
-    margin-left:1%;
+  .gifButton{
+      margin:1% 1%;
+  }
+
+.themeButton{
+    margin: 1% auto;
 }
 
 #title{
@@ -22,11 +26,20 @@ body{
     font-family: 'Space Mono', monospace;
 }
 
+#themeContainer{
+    background:#7e9a9a;
+    border: solid #8ec3eb 3px;
+    border-radius:15px;
+    padding:1%;
+}
+
+
 #buttonContainer{
     background:#7e9a9a;
     border: solid #8ec3eb 3px;
     border-radius:15px;
     padding:1%;
+    margin-top:3%;
 }
 
 #gifContainer{
@@ -42,14 +55,9 @@ body{
     float:left;
 }
 
-#gif{
-    float:left;
-}
-
 #searchContainer{
     background:#7e9a9a;
     border: solid #8ec3eb 3px;
-    margin-top:3%;
     height:150px;
     border-radius:15px;
     padding:1%;
