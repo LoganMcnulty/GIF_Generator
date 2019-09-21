@@ -3,25 +3,30 @@ $(document).ready(function(){
 
     $("#space").on("click", function() {
         $("head link#themeSelectorCSS").attr("href", "assets/css/spaceCSS.css");
-        alert('test')
+        // $("#themeSelectorJS").attr("src", "assets/Javascript/spaceJS.js");
+        $("#title").text("A Universe of GIFs");
     });
 
     
     $("#zooAnimals").on("click", function() {
-        $("head link#themeSelectorCSS").attr("href", "assets/css/space.css");
-        alert('test')
+        $("head link#themeSelectorCSS").attr("href", "assets/css/zooAnimalsCSS.css");
+        // $("#themeSelectorJS").attr("src", "assets/Javascript/zooAnimals.js");
+        $("#title").text("Animalistic GIFs");
+
     });
 
     
     $("#finance").on("click", function() {
-        $("head link#themeSelectorCSS").attr("href", "assets/css/space.css");
-        alert('test')
+        $("head link#themeSelectorCSS").attr("href", "assets/css/financeCSS.css");
+        // $("#themeSelectorJS").attr("src", "assets/Javascript/finance.js");
+        $("#title").text("Speculating in the GIF Market");
     });
 
     
     $("#sports").on("click", function() {
-        $("head link#themeSelectorCSS").attr("href", "assets/css/space.css");
-        alert('test')
+        $("head link#themeSelectorCSS").attr("href", "assets/css/sportsCSS.css");
+        // $("#themeSelectorJS").attr("src", "assets/Javascript/sports.js");
+        $("#title").text("Allstar Sports GIFs");
     });
 
     // displayMovieInfo function re-renders the HTML to display the appropriate content
@@ -76,11 +81,9 @@ $(document).ready(function(){
       // Looping through the array of gifs
       for (var i = 0; i < gifs.length; i++) {
 
-        // Then dynamicaly generating buttons for each gf in the array
-        // This code $("<button>") is all jQuery needs to create the beginning and end tag. (<button></button>)
         var a = $("<button>");
         // Adding a class of movie-btn to our button
-        a.addClass("btn btn-primary btn-lg gifButton");
+        a.addClass("btn btn-lg gifButton");
         // Adding a data-attribute
         a.attr("data-name", gifs[i]);
         // Providing the initial button text

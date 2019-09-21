@@ -7,11 +7,15 @@ body{
   }
 
   .gifButton{
-      margin:1% 1%;
+    margin:1% 1%;
+    background:#8ec3eb;
+    color:black;
   }
 
 .themeButton{
     margin: 1% auto;
+    background:#8ec3eb;
+    color:black;
 }
 
 #title{
@@ -45,7 +49,7 @@ body{
 #gifContainer{
     background:#7e9a9a;
     border: solid #8ec3eb 3px;
-    margin-top:3%;
+    margin: 3% 0 3%;
     padding:1%;
     border-radius:15px;
 }
