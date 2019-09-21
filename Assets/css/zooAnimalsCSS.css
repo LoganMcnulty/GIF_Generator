@@ -59,6 +59,12 @@ body{
     float:left;
 }
 
+.card-body{
+    padding:1%;
+    background: #e4b228;
+    color:white;
+}
+
 #searchContainer{
     background:#b3764d;
     border: solid #e4b228 3px;

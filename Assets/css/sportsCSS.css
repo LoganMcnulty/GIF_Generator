@@ -8,20 +8,20 @@ body{
 
   .gifButton{
     margin:1% 1%;
-    background:#c809f8;
+    background:rgba(206, 50, 245, 0.753);
     color:white;
   }
 
 .themeButton{
     margin: 1% auto;
-    background:#c809f8;
+    background:rgba(206, 50, 245, 0.753);
     color:white;
 }
 
 #title{
     margin:3%;
     text-align:center;
-    text-shadow: -2px 0 #c809f8, 0 2px #c809f8, 2px 0 #c809f8, 0 -2px #c809f8;
+    text-shadow: -2px 0 rgba(206, 50, 245, 0.753), 0 2px rgba(206, 50, 245, 0.753), 2px 0 rgba(206, 50, 245, 0.753), 0 -2px rgba(206, 50, 245, 0.753);
     color:white;
     font-weight: bold;
     text-decoration:underline;
@@ -32,7 +32,7 @@ body{
 
 #themeContainer{
     background:#7e9a9a;
-    border: solid #c809f8 3px;
+    border: solid rgba(206, 50, 245, 0.753) 3px;
     border-radius:15px;
     padding:1%;
 }
@@ -40,7 +40,7 @@ body{
 
 #buttonContainer{
     background:#7e9a9a;
-    border: solid #c809f8 3px;
+    border: solid rgba(206, 50, 245, 0.753) 3px;
     border-radius:15px;
     padding:1%;
     margin-top:3%;
@@ -48,7 +48,7 @@ body{
 
 #gifContainer{
     background:#7e9a9a;
-    border: solid #c809f8 3px;
+    border: solid rgba(206, 50, 245, 0.753) 3px;
     margin: 3% 0 3%;
     padding:1%;
     border-radius:15px;
@@ -59,9 +59,15 @@ body{
     float:left;
 }
 
+.card-body{
+    padding:1%;
+    background: rgba(206, 50, 245, 0.753);
+    color:white;
+}
+
 #searchContainer{
     background:#7e9a9a;
-    border: solid #c809f8 3px;
+    border: solid rgba(206, 50, 245, 0.753) 3px;
     height:150px;
     border-radius:15px;
     padding:1%;
