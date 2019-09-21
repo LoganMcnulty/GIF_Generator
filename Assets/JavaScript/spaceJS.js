@@ -5,26 +5,26 @@ $(document).ready(function(){
 
     //Theme modification buttons. On theme selction, update CSS and title
     $("#space").on("click", function() {
-        $("head link#themeSelectorCSS").attr("href", "assets/css/spaceCSS.css");
+        $("head link#themeSelectorCSS").attr("href", "Assets/css/spaceCSS.css");
         $("#title").text("A Universe of GIFs");
     });
 
     
     $("#zooAnimals").on("click", function() {
-        $("head link#themeSelectorCSS").attr("href", "assets/css/zooAnimalsCSS.css");
+        $("head link#themeSelectorCSS").attr("href", "Assets/css/zooAnimalsCSS.css");
         $("#title").text("Animalistic GIFs");
 
     });
 
     
     $("#finance").on("click", function() {
-        $("head link#themeSelectorCSS").attr("href", "assets/css/financeCSS.css");
+        $("head link#themeSelectorCSS").attr("href", "Assets/css/financeCSS.css");
         $("#title").text("Speculating in the GIF Market");
     });
 
     
     $("#sports").on("click", function() {
-        $("head link#themeSelectorCSS").attr("href", "assets/css/sportsCSS.css");
+        $("head link#themeSelectorCSS").attr("href", "Assets/css/sportsCSS.css");
         $("#title").text("Allstar Sports GIFs");
     });
 
